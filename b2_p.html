@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    width: 200px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.new-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: yellow;
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+
+    .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: gray;
+    position: absolute;
+    bottom: 10px;  
+    left: 20px;   
+    opacity: 0.6;  
+}
+   
+
+.icons {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-end;  
+    position: absolute;
+    bottom: 20px;
+    right: 20px;  
+}
+
+.icons span {
+    font-size: 20px;
+    cursor: pointer;
+    margin-bottom: 5px; 
+}
+</style>
+
+<body>
+        <div class="product-container">
+            <div class="product">
+                <h3>Nokia 2012</h3>
+                <div class="image-container">
+                    <img src="camera.jpg" alt="Camera">
+                    <span class="new-badge">NEW!</span>
+                </div>
+                <div class="icons">
+                    <span>⭐</span>
+                    <span>✉️</span>
+                    <span>🛒</span>
+                </div>
+                <p class="price">$99.99</p>
+            </div>
+    
+   
+            <div class="product">
+                <h3>Nokia 2012</h3>
+                <div class="image-container">
+                    <img src="camera.jpg" alt="Camera">
+                    <span class="new-badge">NEW!</span>
+                </div>
+                <div class="icons">
+                    <span>⭐</span>
+                    <span>✉️</span>
+                    <span>🛒</span>
+                </div>
+                <p class="price">$99.99</p>
+            </div>
+    
+            <div class="product">
+                <h3>Nokia 2012</h3>
+                <div class="image-container">
+                    <img src="camera.jpg" alt="Camera">
+                    <span class="new-badge">NEW!</span>
+                </div>
+                <div class="icons">
+                    <span>⭐</span>
+                    <span>✉️</span>
+                    <span>🛒</span>
+                </div>
+                <p class="price">$99.99</p>
+            </div>
+    
+            <div class="product">
+                <h3>Nokia 2012</h3>
+                <div class="image-container">
+                    <img src="camera.jpg" alt="Camera">
+                    <span class="new-badge">NEW!</span>
+                </div>
+                <div class="icons">
+                    <span>⭐</span>
+                    <span>✉️</span>
+                    <span>🛒</span>
+                </div>
+                <p class="price">$99.99</p>
+            </div>
+    
+            <div class="product">
+                <h3>Nokia 2012</h3>
+                <div class="image-container">
+                    <img src="camera.jpg" alt="Camera">
+                    <span class="new-badge">NEW!</span>
+                </div>
+                <div class="icons">
+                    <span>⭐</span>
+                    <span>✉️</span>
+                    <span>🛒</span>
+                </div>
+                <p class="price">$99.99</p>
+            </div>
+    
+            <div class="product">
+                <h3>Nokia 2012</h3>
+                <div class="image-container">
+                    <img src="camera.jpg" alt="Camera">
+                    <span class="new-badge">NEW!</span>
+                </div>
+                <div class="icons">
+                    <span>⭐</span>
+                    <span>✉️</span>
+                    <span>🛒</span>
+                </div>
+                <p class="price">$99.99</p>
+            </div>
+        </div>
+ </body>
+ </html>
+</body>
+</html>

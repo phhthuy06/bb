@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style> 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.top-border {
+    background: yellow;
+    height: 10px;
+    width: 100%;
+}
+.banner {
+    background: yellow;
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    background: black;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu-left {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-right {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left {
+    width: 70%;
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.left h2 {
+    color: red;
+}
+
+.left img {
+    width: 300px;
+    border: 1px solid #ccc;
+}
+
+.right {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-top {
+    background: green;
+    height: 120px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.right-bottom {
+    display: flex;
+    gap: 10px;
+}
+
+.right-left, .right-right {
+    background: green;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+}
+</style>
+<body>
+        <div class="top-border"></div>
+  
+        <header>
+            <div class="banner"></div>
+            <nav>
+                <ul>
+                    <div class="menu-left">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Feedback</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">My Account</a></li>
+                    </div>
+                    <div class="menu-right">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Tiếng Việt</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="left">
+                <h2>TRANG CHỦ</h2>
+            
+                <img src="watch.jpg" alt="Đồng hồ">
+            </section>
+            <section class="right">
+                <div class="right-top">RIGHT-TOP</div>
+                <div class="right-bottom">
+                    <div class="right-left">RIGHT-LEFT</div>
+                    <div class="right-right">RIGHT-RIGHT</div>
+                </div>
+            </section>
+        </main>
+    </body>
+    </html>

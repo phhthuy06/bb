@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chania Layout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.topnav {
+    background-color: #f4b6b6;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    text-decoration: none;
+    color: white; 
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 250px;
+    float: left;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    background-color: #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.sidebar a.active {
+    background-color: #007BFF; 
+    color: white;
+}
+
+.content {
+    width: calc(100% - 270px);
+    float: right;
+    padding: 20px;
+}
+
+.header-box {
+    background-color: blue;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1, h2, p {
+    margin-bottom: 15px;  
+}
+
+
+.footer {
+    background-color: lightblue;
+    text-align: left;
+    padding: 15px;
+    font-size: 18px;
+    color: white; 
+    clear: both;
+}
+</style>
+<body>
+
+    <div class="topnav">
+        <a href="#" class="active">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">The Flight</a></li>
+                <li><a href="#" class="active">The City</a></li>
+                <li><a href="#">The Island</a></li>
+                <li><a href="#">The Food</a></li>
+                <li><a href="#">The People</a></li>
+                <li><a href="#">The History</a></li>
+                <li><a href="#">The Oceans</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="header-box">
+                <h2>The City</h2>
+            </div>
+            <h1>Chania</h1>
+            <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+            <p>You will learn more about responsive web pages in a later chapter.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <div class="footer">
+        Footer Text
+    </div>
+
+</body>
+</html>
